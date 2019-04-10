@@ -1,28 +1,9 @@
 # 3D-R<sup>2</sup>N<sup>2</sup>: 3D Recurrent Reconstruction Neural Network
 
-This repository contains the source codes for the paper [Choy et al., 3D-R2N2: A Unified Approach for Single and Multi-view 3D Object Reconstruction, ECCV 2016](http://arxiv.org/abs/1604.00449). Given one or multiple views of an object, the network generates voxelized ( a voxel is the 3D equivalent of a pixel) reconstruction of the object in 3D.
+Link to the Original repository:- https://github.com/chrischoy/3D-R2N2
 
-## Citing this work
+This repository contains a copy of source codes for the paper [Choy et al., 3D-R2N2: A Unified Approach for Single and Multi-view 3D Object Reconstruction, ECCV 2016](http://arxiv.org/abs/1604.00449). Given one or multiple views of an object, the network generates voxelized ( a voxel is the 3D equivalent of a pixel) reconstruction of the object in 3D.
 
-If you find this work useful in your research, please consider citing:
-
-```
-@inproceedings{choy20163d,
-  title={3D-R2N2: A Unified Approach for Single and Multi-view 3D Object Reconstruction},
-  author={Choy, Christopher B and Xu, Danfei and Gwak, JunYoung and Chen, Kevin and Savarese, Silvio},
-  booktitle = {Proceedings of the European Conference on Computer Vision ({ECCV})},
-  year={2016}
-}
-```
-
-## Project Page
-
-The project page is available at [http://cvgl.stanford.edu/3d-r2n2/](http://cvgl.stanford.edu/3d-r2n2/).
-
-## Overview
-
-![Overview](imgs/overview.png)
-*Left: images found on Ebay, Amazon, Right: overview of `3D-R2N2`*
 
 Traditionally, single view reconstruction and multi-view reconstruction are disjoint problems that have been dealt using different approaches. In this work, we first propose a unified framework for both single and multi-view reconstruction using a `3D Recurrent Reconstruction Neural Network` (3D-R2N2).
 
@@ -141,15 +122,3 @@ export LIBRARY_PATH=/path/to/cuDNN/lib64:$LD_LIBRARY_PATH
 ```
 
 For more details, please refer to [http://deeplearning.net/software/theano/library/sandbox/cuda/dnn.html](http://deeplearning.net/software/theano/library/sandbox/cuda/dnn.html)
-
-
-## Follow-up Paper
-
-Gwak et al., [Weakly supervised 3D Reconstruction with Adversarial Constraint](https://arxiv.org/abs/1705.10904), [project website](http://cvgl.stanford.edu/mcrecon/)
-
-Supervised 3D reconstruction has witnessed a significant progress through the use of deep neural networks. However, this increase in performance requires large scale annotations of 2D/3D data. In this paper, we explore inexpensive 2D supervision as an alternative for expensive 3D CAD annotation. Specifically, we use foreground masks as weak supervision through a raytrace pooling layer that enables perspective projection and backpropagation. Additionally, since the 3D reconstruction from masks is an ill posed problem, we propose to constrain the 3D reconstruction to the manifold of unlabeled realistic 3D shapes that match mask observations. We demonstrate that learning a log-barrier solution to this constrained optimization problem resembles the GAN objective, enabling the use of existing tools for training GANs. We evaluate and analyze the manifold constrained reconstruction on various datasets for single and multi-view reconstruction of both synthetic and real images.
-
-
-## License
-
-MIT License
