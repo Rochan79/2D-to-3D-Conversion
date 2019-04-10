@@ -1,2 +1,2 @@
-# 2d-3d-model
-This repository contains 2 types of modeling algorithms to do the aforementioned task
+# 2D to 3D Conversion
+This repository contains 2 types of modeling algorithms to convert 2D images into 3D models
