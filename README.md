@@ -7,22 +7,6 @@ This repository contains a copy of source codes for the paper [AtlasNet: A Papie
 
 ![result](pictures/plane.gif)
 
-### Citing this work
-
-If you find this work useful in your research, please consider citing:
-
-```
-@inproceedings{groueix2018,
-          title={{AtlasNet: A Papier-M\^ach\'e Approach to Learning 3D Surface Generation}},
-          author={Groueix, Thibault and Fisher, Matthew and Kim, Vladimir G. and Russell, Bryan and Aubry, Mathieu},
-          booktitle={Proceedings IEEE Conf. on Computer Vision and Pattern Recognition (CVPR)},
-          year={2018}
-        }
-```
-
-### Project Page
-
-The project page is available http://imagine.enpc.fr/~groueixt/atlasnet/
 
 # Install
 
@@ -166,31 +150,6 @@ sudo mv /usr/share/meshlab/shaders/phong.frag /usr/share/meshlab/shaders/phong.f
 sudo cp auxiliary/phong.frag /usr/share/meshlab/shaders/phong.frag #restart Meshlab
 ```
 
-
-
-## Acknowledgement
-
-The code for the Chamfer Loss was adapted from Fei Xia' repo : [PointGan](https://github.com/fxia22/pointGAN). Many thanks to him !
-
-This work was funded by [Adobe System](https://github.com/fxia22/pointGAN) and [Ecole Doctorale MSTIC](http://www.univ-paris-est.fr/fr/-ecole-doctorale-mathematiques-et-stic-mstic-ed-532/).
-
-# Cool Contributions
-
-* **[Yana Hasson](https://github.com/hassony2)** trained our sphere model, for Single View Reconstruction (SVR) in view-centered coordinates : performances are unaffected! Qualitative and quantitative results follow. Many thanks !
-View [this paper](http://openaccess.thecvf.com/content_cvpr_2018/CameraReady/3826.pdf) for a good review of on object-centered representation VS view-centered representation.
-
-| frame | Average recontruction error for SVR (x1000) : chamfer distance on input pointcloud and reconstruction of size 2500 pts|
-| ---------- | -------------------- |
-| object-centered | 4.87⁽⁴⁾ |
-| view-centered    | 4.88   |
-
-<img src="pictures/chair_yana.png" style="zoom:55%" /><img src="pictures/car_yana.png" style="zoom:60%" />
-
-⁽⁴⁾ Trained with Atlasnet v2 (with learning rate scheduler : slightly better than the paper's result)
-
-## License
-
-[MIT](https://github.com/ThibaultGROUEIX/AtlasNet/blob/master/license_MIT)
 
 ## Old links for data
 * [The point clouds from ShapeNet, with normals](https://mega.nz/#!9LhW2CxT!A9d45cri4q8q10HfukUV_cy7J1lbWTFQtw7DKJlZKKAhttps://mega.nz/#!9LhW2CxT!A9d45cri4q8q10HfukUV_cy7J1lbWTFQtw7DKJlZKKA) go in ``` data/customShapeNet```
